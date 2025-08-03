@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # (Your API key setup remains the same)
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="your-openai-api-key-here")
 
 # --- 1. Data Loading and Analysis (Encapsulated) ---
 # This runs once when the app starts
@@ -89,4 +89,5 @@ def chat():
     })
 
 if __name__ == '__main__':
+
     app.run(debug=True)
